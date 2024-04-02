@@ -19,3 +19,6 @@ To run the project please do the following:
 # How to Run Test
 To run the unit test please do the following:
 - Run `go test ./...`
+
+# Full Documentation
+Please open `https://mesquite-plier-172.notion.site/URL-Shortener-8fe4e5bb3a0e40d7b383e67a18136dd0` to see full documentation of the system.
