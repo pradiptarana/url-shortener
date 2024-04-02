@@ -1,5 +1,5 @@
 # url-shortener
-This is a repository for url shortener in Golang
+This is a repository for url shortener in Golang. We assume that the minimal length of the Short URL is 6.
 
 # How to Run
 To run the project please do the following:
@@ -15,6 +15,18 @@ To run the project please do the following:
 
 - Create `.env` file. Please refer to `.env.sample` for the env variable that used in this project.
 - Run `go run main.go`.
+
+# API List
+- `curl --request POST \
+  --url http://localhost:8080/api/v1/url \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.6.1' \
+  --data '{
+	"original_url": "https://google.com"
+}'`
+- `curl --request GET \
+  --url http://localhost:8080/:short_url \
+  --header 'User-Agent: insomnia/8.6.1'`
 
 # How to Run Test
 To run the unit test please do the following:
